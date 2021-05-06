@@ -23,7 +23,7 @@
 }
 
 body {
-  padding: 5% 30%;
+  padding: 5% 30% 0 30%;
 }
 
 .card-img {
@@ -34,4 +34,16 @@ body {
 .card {
   text-align: center;
   align-items: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+table {
+  margin: 0 auto;
+}
+
+.new_user {
+  margin-left: 80%;
 }

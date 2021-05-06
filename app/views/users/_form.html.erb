@@ -12,17 +12,17 @@
   <% end %>
 
   <div class="field">
-  <%= form.label :fullname %>
-  <%= form.text_field :fullname %>
+  <%= label_tag(:fullname, "Full name", class: 'label' ) %>
+  <%= form.text_field(:fullname, placeholder: 'Full name', class: 'input') %>
   </div>
 
   <div class="field">
-  <%= form.label :birthdate %>
-  <%= form.date_field :birthdate%>
+  <%= label_tag(:birthdate, "Birth Date", class: 'label' ) %>
+  <%= form.date_field(:birthdate, placeholder: 'Birth Date', class: 'input') %>
   </div>
 
   <div class="field">
-  <p>Gender</p>
+  <p class='label'>Gender</p>
   <%= form.radio_button(:gender, "Male") %>
   <%= form.label(:male, "Male") %>
   <%= form.radio_button(:gender, "Female") %>
@@ -30,11 +30,11 @@
   </div>
 
   <div class="field">
-  <%= form.label :imageURL %>
-  <%= form.text_field :imageURL %>
+  <%= label_tag(:imageURL, "image url", class: 'label' ) %>
+  <%= form.text_field(:imageURL, placeholder: 'image url', class: 'input') %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit('Create', class: 'button') %>
   </div>
 <% end %>
