@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <h1><%= @user.fullname %></h1>
-<p>Image: <%= @user.imageURL  %></p>
+<%= image_tag @user.imageURL %>
 <p>Gender: <%= @user.gender %></p>
 <p>Birthdate: <%= @user.birthdate %></p>
 <%= link_to 'Back', users_path %>
