@@ -2,9 +2,9 @@ class CreateUsers < ActiveRecord::Migration[6.1]
   def change
     create_table :users do |t|
       t.string :fullname
-      t.datetime :birthdate
+      t.date :birthdate
       t.string :gender
-      t.string :imageURL
+      t.text :imageURL
 
       t.timestamps
     end
