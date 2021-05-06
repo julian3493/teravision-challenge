@@ -23,10 +23,10 @@
 
   <div class="field">
   <p>Gender</p>
-  <%= radio_button_tag(:gender, "Male") %>
-  <%= label_tag(:male, "Male") %>
-  <%= radio_button_tag(:gender, "Female") %>
-  <%= label_tag(:female, "Female") %>
+  <%= form.radio_button(:gender, "Male") %>
+  <%= form.label(:male, "Male") %>
+  <%= form.radio_button(:gender, "Female") %>
+  <%= form.label(:female, "Female") %>
   </div>
 
   <div class="field">
